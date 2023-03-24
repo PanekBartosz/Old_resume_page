@@ -16,6 +16,11 @@
     --textColor: #353535;
     --bgColor: #f7f7f7;
 }
+/* Smooth scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
 /* Header */
 header{
     height: 100vh;
@@ -603,3 +608,4 @@ main{
         padding: 50px 10px;
     }
 }
+
