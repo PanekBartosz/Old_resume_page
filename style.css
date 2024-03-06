@@ -461,12 +461,14 @@ main{
     grid-gap: 35px;
 }
 #portfolio .port-row .port-item{
+    max-height: 480px;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
 }
 #portfolio .port-row .port-item .port-img img{
     width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 #portfolio .port-row .port-item .port-info{
@@ -476,12 +478,12 @@ main{
     width: 100%;
     height: 100%;
     background-color: var(--themeColor);
-    padding: 0 15px;
+    padding: 0 2vw;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 1vw;
     transform: scale(0);
     transition: 0.6s;
     border-radius: 10px;
@@ -493,23 +495,23 @@ main{
 }
 #portfolio .port-row .port-item .port-info h4{
     color: var(--bgColor);
-    font-size: 25px;
+    font-size: calc(0.75vw + 10px);
     font-weight: 600;
 }
 #portfolio .port-row .port-item .port-info h4 + p{
     color: var(--bgColor);
-    font-size: 15px;
+    font-size: calc(0.5vw + 5px);
 }
 #portfolio .port-row .port-item .port-info a{
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: calc(1vw + 10px);
     width: 100%;
-    height: 45px;
+    height: 3vw;
     color: var(--textColor);
     background-color: var(--bgColor);
     border-radius: 4px;
-    line-height: 45px;
+    line-height: 3vw;
     transition: 0.6s;
 }
 #portfolio .port-row .port-item .port-info a:hover{
@@ -526,15 +528,34 @@ main{
         grid-template-columns: repeat(2,1fr);
         grid-gap: 15px;
     }
+    #portfolio .port-row .port-item .port-info {
+        padding: 0 4vw;
+        gap: 2vw;
+    }
 }
 @media only screen and (max-width: 415px){
     #portfolio .port-row{
         grid-template-columns: repeat(1,1fr);
         grid-gap: 15px;
     }
+    #portfolio .port-row .port-item .port-info {
+        padding: 0 6vw;
+        gap: 3vw;
+    }
+    #portfolio .port-row .port-item .port-info h4{
+        font-size: calc(3vw + 10px);
+    }
+    #portfolio .port-row .port-item .port-info h4 + p{
+        font-size: calc(2.5vw + 5px);
+    }
+    #portfolio .port-row .port-item .port-info a{
+        font-size: calc(3vw + 10px);
+        height: 8vw;
+        line-height: 8vw;
+    }
 }
 
-/* Kontakt section */
+/* Contact section */
 
 #contact{
     padding: 70px 30px;

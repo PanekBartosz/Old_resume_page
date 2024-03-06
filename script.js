@@ -22,7 +22,7 @@ let navLinks = document.querySelectorAll('nav ul li a');
 let sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', function() {
-  const scrollPos = window.scrollY + 20;
+  const scrollPos = window.scrollY + window.innerHeight * 0.8; // Bottom 20% of the viewport
   sections.forEach(section => {
     if (scrollPos > section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
       navLinks.forEach(link => {
